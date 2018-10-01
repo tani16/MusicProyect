@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Music Aplication</title>
+    </head>
+    <body>     
+        <p> Bienvenido <span th:text="${user}"></span>, estas en la pantalla de gestión </p>
+        <div>
+        	<form method="get" action="/gestion/newArtist">
+    			<input type="submit" value="Añadir nuevo artista" />
+			</form>
+        </div>
+        <div>
+        	<form method="get" action="/gestion/newPeople">
+    			<input type="submit" value="Añadir nueva persona" />
+			</form>
+        </div>
+        <div>
+        	<form method="get" action="/gestion/asignarPeople">
+    			<input type="submit" value="Asignar gente" />
+			</form>
+        </div>
+    </body>
+</html>

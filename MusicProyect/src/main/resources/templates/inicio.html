@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Music Aplication</title>
+    </head>
+    <body>     
+        <p> Bienvenido <span th:text="${user}"></span>, ¿Qué desea realizar? </p>
+        <div>
+        	<form method="get" action="/consulta/listado">
+    			<input type="submit" value="Consulta de artistas" />
+			</form>
+        </div>
+        <div>
+        	<form method="get" action="/gestion">
+    			<input type="submit" value="Gestión de datos" />
+			</form>
+        </div>
+    </body>
+</html>
